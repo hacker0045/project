@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    background-color: aqua;
+
+}
+#form{
+    width: 400px;
+    margin: 20vh auto;
+    background-color:white;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+h2{
+    color: red;
+    text-align: center;
+}
+.user_input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+}
+.user_input input{
+    margin-top: 8px;
+    font-size:15px;
+    border-radius: 7px;
+    padding: 5px;
+
+}

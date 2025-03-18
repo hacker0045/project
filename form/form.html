@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>form_validation</title>
-	<link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-	<div class="condainer">
-		<form action="" id="form">
-			<h2>register form</h2><br>
-			<div class="user_input">
-				<label for="">user name</label>
-				<input type="text" name="" id="username">
-				<div class="error"></div>
-			</div>
-			<div class="user_input">
-				<label for="">email</label>
-				<input type="text" name="" id="email">
-				<div class="error"></div>
-			</div>
-			<div class="user_input">
-				<label for="">password</label>
-				<input type="password" name="" id="password">
-				<div class="error"></div>
-			</div>
-			<div class="user_input">
-				<label for="">conform password</label>
-				<input type="password" name="" id="c-password">
-				<div class="error"></div>
-			</div>
-			<button type="submit">register</button>
-		</form>
-	</div>
+    <div class="container">
+        <form action="" id="form" method="post">
+            <h2>Register Form</h2>
+
+            <div class="user_input">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+                <span class="error" id="nameerror">Please enter username</span>
+            </div>
+
+            <div class="user_input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <span class="error" id="emailerror">Please enter email</span>
+            </div>
+            
+            <div class="user_input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <span class="error" id="pwderror">Please enter password</span>
+            </div>
+
+            <div class="user_input">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" name="cpassword" id="cpassword">
+                <span class="error" id="cpwderror">Invalid password</span>
+            </div>
+   
+            <button type="button" onclick="validateForm()">Register</button>
+        </form>
+    </div>
+    <script src="form.js"></script>
 </body>
 </html>
